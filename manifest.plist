@@ -19,7 +19,7 @@
                <key>bundle-identifier</key>
                <string>com.tencent.QQMusic.dailybuild</string>
                <key>bundle-version</key>
-               <string>14.6.0</string>
+               <string>30</string>
                <key>kind</key>
                <string>software</string>
                <key>title</key>
