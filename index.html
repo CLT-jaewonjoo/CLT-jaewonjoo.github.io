@@ -1,1 +1,30 @@
 Hello Worlk
+<a href="itms-services://?action=download-manifest&url=https://clt-jaewonjoo.github.io/manifest.plist">Download</a>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width">
+    <title>Fitatu</title>
+</head>
+<body>
+    <p>
+        Scan code to install Fitatu
+    </p>
+    <div class="qrCode"></div>
+    <script src="libs/qrcode.min.js"></script>
+    <script>
+        var qrCodeElement = document.querySelector(".qrCode");
+        var qrCodeProperties = {width : 200, height : 200};
+        var qrCodeUrl = 'itms-services://?action=download-manifest&amp;url=https://clt-jaewonjoo.github.io/manifest.plist';
+
+        new QRCode(qrCodeElement, qrCodeProperties)
+                .makeCode(qrCodeUrl);
+    </script>
+</body>
+</html>
