@@ -7,18 +7,35 @@
     <meta name="viewport"
           content="width=device-width">
     <title>TME TEST</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        .qrCode {
+            margin-top: 16px;
+        }
+    </style>
 </head>
 <body>
-    <p>        Scan code to install TME IPA (2025.06.10)    </p>
+    <p>Scan code to install TME IPA (2025.06.11)</p>
     <div class="qrCode"></div>
+
     <script src="libs/qrcode.min.js"></script>
     <script>
         var qrCodeElement = document.querySelector(".qrCode");
-        var qrCodeProperties = {width : 200, height : 200};
-        var qrCodeUrl = 'itms-services://?action=download-manifest&amp;url=https://clt-jaewonjoo.github.io/manifest.plist';
+        var qrCodeProperties = {width: 200, height: 200};
+        var qrCodeUrl = 'itms-services://?action=download-manifest&url=https://clt-jaewonjoo.github.io/manifest.plist';
 
         new QRCode(qrCodeElement, qrCodeProperties)
-                .makeCode(qrCodeUrl);
+            .makeCode(qrCodeUrl);
     </script>
 </body>
 </html>
