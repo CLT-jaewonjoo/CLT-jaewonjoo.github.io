@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width">
-    <title>TME TEST</title>
+    <title>QQMusic Install</title>
     <style>
         body {
             margin: 0;
@@ -25,17 +25,26 @@
     </style>
 </head>
 <body>
-    <p>Scan code to install TME IPA (2025.06.18)</p>
-    <div class="qrCode"></div>
+    <p>Scan code to install QQMusic IPA</p>
+    <div>
+        <div>
+            <span>QA 서버 (2025.06.18)</span>
+            <div class="qrCode" id="qr1"></div>
+        </div>
+        <div style="margin-top:24px;">
+            <span>REAL 서버 (2025.06.21)</span>
+            <div class="qrCode" id="qr2"></div>
+        </div>
+    </div>
 
     <script src="libs/qrcode.min.js"></script>
     <script>
-        var qrCodeElement = document.querySelector(".qrCode");
         var qrCodeProperties = {width: 200, height: 200};
-        var qrCodeUrl = 'itms-services://?action=download-manifest&url=https://clt-jaewonjoo.github.io/manifest.plist';
+        var qrCodeUrl1 = 'itms-services://?action=download-manifest&url=https://clt-jaewonjoo.github.io/manifest1.plist';
+        var qrCodeUrl2 = 'itms-services://?action=download-manifest&url=https://clt-jaewonjoo.github.io/manifest_real.plist';
 
-        new QRCode(qrCodeElement, qrCodeProperties)
-            .makeCode(qrCodeUrl);
+        new QRCode(document.getElementById("qr1"), qrCodeProperties).makeCode(qrCodeUrl1);
+        new QRCode(document.getElementById("qr2"), qrCodeProperties).makeCode(qrCodeUrl2);
     </script>
 </body>
 </html>
