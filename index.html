@@ -25,22 +25,20 @@
     </style>
 </head>
 <body>
-    <p>Scan code to install QQMusic IPA</p>
-    <div>
+    <p style="font-size: 2rem;">Scan code to install QQMusic IPA</p>  <div></div>
         <div>
             <span>QA 서버 (2025.06.18)</span>
             <div class="qrCode" id="qr1"></div>
         </div>
-        <div style="margin-top:24px;">
-            <span>REAL 서버 (2025.06.21)</span>
+        <div style="margin-top:100px;">
+            <span><b>REAL 서버 (2025.06.21)</b></span>
             <div class="qrCode" id="qr2"></div>
-        </div>
-    </div>
+        </div>  </div>
 
     <script src="libs/qrcode.min.js"></script>
     <script>
-        var qrCodeProperties = {width: 200, height: 200};
-        var qrCodeUrl1 = 'itms-services://?action=download-manifest&url=https://clt-jaewonjoo.github.io/manifest1.plist';
+        var qrCodeProperties = {width: 300, height: 300};
+        var qrCodeUrl1 = 'itms-services://?action=download-manifest&url=https://clt-jaewonjoo.github.io/manifest.plist';
         var qrCodeUrl2 = 'itms-services://?action=download-manifest&url=https://clt-jaewonjoo.github.io/manifest_real.plist';
 
         new QRCode(document.getElementById("qr1"), qrCodeProperties).makeCode(qrCodeUrl1);
