@@ -27,7 +27,7 @@
 <body>
     <p style="font-size: 2rem;">Install QQMusic IPA</p>  <div></div>
         <div>
-            <span>2025.06.26</span>
+            <span>2025.09.01</span>
             <div class="qrCode" id="qr1"></div>
         </div>
       </div>
@@ -36,10 +36,10 @@
     <script>
         var qrCodeProperties = {width: 300, height: 300};
         var qrCodeUrl1 = 'itms-services://?action=download-manifest&url=https://clt-jaewonjoo.github.io/manifest.plist';
-        var qrCodeUrl2 = 'itms-services://?action=download-manifest&url=https://clt-jaewonjoo.github.io/manifest_real.plist';
+        // var qrCodeUrl2 = 'itms-services://?action=download-manifest&url=https://clt-jaewonjoo.github.io/manifest_real.plist';
 
         new QRCode(document.getElementById("qr1"), qrCodeProperties).makeCode(qrCodeUrl1);
-        new QRCode(document.getElementById("qr2"), qrCodeProperties).makeCode(qrCodeUrl2);
+        // new QRCode(document.getElementById("qr2"), qrCodeProperties).makeCode(qrCodeUrl2);
     </script>
 </body>
 </html>
