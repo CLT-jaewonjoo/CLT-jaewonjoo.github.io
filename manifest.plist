@@ -11,7 +11,7 @@
                   <key>kind</key>
                   <string>software-package</string>
                   <key>url</key>
-                  <string>https://github.com/CLT-jaewonjoo/CLT-jaewonjoo.github.io/releases/download/TME_1/QQMusic_20.3.0.52.7e8b6eb3.ipa</string>
+                  <string>https://github.com/CLT-jaewonjoo/CLT-jaewonjoo.github.io/releases/download/TME_1/QQMusic_20.8.5.25.35490690.ipa</string>
                </dict>
             </array>
             <key>metadata</key>
@@ -19,11 +19,11 @@
                <key>bundle-identifier</key>
                <string>com.tencent.QQMusic.dailybuild</string>
                <key>bundle-version</key>
-               <string>20.3.0.52</string>
+               <string>20.8.5.25</string>
                <key>kind</key>
                <string>software</string>
                <key>title</key>
-               <string>QQMusic 14.8.0</string>
+               <string>QQMusic 20.8.5</string>
             </dict>
          </dict>
       </array>
